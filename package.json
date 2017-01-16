@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "unzip ios/libs/TwilioSDK/Libraries/libTwilioClient.a.zip -d ios/libs/TwilioSDK/Libraries/"
+      "postinstall": "node scripts/postinstall.js"
   },
   "keywords": [
     "react-component",
