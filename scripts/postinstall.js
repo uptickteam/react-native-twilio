@@ -3,7 +3,7 @@ let os = require('os');
 
 console.log(os.platform());
 if (os.platform() === 'darwin') {
-    exec("unzip ../ios/libs/TwilioSDK/Libraries/libTwilioClient.a.zip -d ../ios/libs/TwilioSDK/Libraries/", function(err, stdout, stderr) {
+    exec("unzip ./ios/libs/TwilioSDK/Libraries/libTwilioClient.a.zip -d ./ios/libs/TwilioSDK/Libraries/", function(err, stdout, stderr) {
         if (err !== null) {
             console.log('exec error: ' + err);
         }
